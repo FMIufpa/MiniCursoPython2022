@@ -24,7 +24,7 @@ float calcularRaizes(float a, float b, float c)
 {
     float delta;
     delta = calcularDelta(a, b, c);
-    if (delta > 0)
+    if (delta >= 0)
     {
         float x1;
         float x2;
@@ -63,14 +63,13 @@ int concavidade(float a)
     }
     else
     {
-        printf("Finção concava para baixo\n");
+        printf("Função concava para baixo\n");
     }
     return 0;
 }
 
 int main()
 {
-    printf("Hello World\n");
     
     float a;
     float b;
